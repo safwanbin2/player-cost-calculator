@@ -53,6 +53,7 @@ main{
     min-height: 100vh;
     display: grid;
     grid-template-columns: 4fr 1fr;
+    padding-bottom: 5rem;
     /* grid-gap: 1rem; */
 }
 .players{
@@ -97,6 +98,9 @@ main{
 .menu h3{
     color: white;
     margin-bottom: 2rem;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
 }
 .side-btn{
     padding: 8px 35px;
@@ -115,7 +119,29 @@ main{
     width: 80%;
     margin-bottom: 2rem;
 }
+#budget label{
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem 0;
+}
 #budget label input{
     border: 1px solid rgb(180, 180, 180);
     background-color: transparent;
+    width: 100px;
+    height: 30px;
+    color: rgb(255, 251, 251);
 }
+.orange-text{
+    color: rgba(255, 94, 25, 1);
+}
+/* main section ends */
+/* footer start */
+footer{
+    background-color: rgb(21, 21, 21);
+    color: rgb(190, 187, 187);
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* footer ends */
