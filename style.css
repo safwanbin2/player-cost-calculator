@@ -49,9 +49,15 @@ header .description{
 /* main section start */
 main{
     background-color: rgb(21, 21, 21);
+    width: 100%;
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    /* grid-gap: 1rem; */
 }
 .players{
-    width: 70%;
+    width: 80%;
+    margin: 0 auto;
     padding-top: 5rem;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -60,13 +66,56 @@ main{
 .player{
     background-color: rgba(13, 13, 13, 1);
     color: white;
+    text-align: center;
+    padding-bottom: 1rem;
 }
 .player img{
     width: 100%;
 }
+.player-name{
+    margin: 1rem 0;
+}
+.career small{
+    margin: 0 1rem;
+    color: rgb(190, 190, 190);
+}
 .select-btn{
-    padding: 5px 25px;
+    padding: 8px 35px;
+    cursor: pointer;
     background-color: rgba(1, 81, 150, 1);
     color: white;
     border: none;
+    font-size: 16px;
+    letter-spacing: .1rem;
+    margin-top: .8rem;
+}
+.menu{
+    padding-top: 5rem;
+    color: rgb(173, 173, 173);
+    width: 100%;
+}
+.menu h3{
+    color: white;
+    margin-bottom: 2rem;
+}
+.side-btn{
+    padding: 8px 35px;
+    cursor: pointer;
+    background-color: rgba(1, 81, 150, 1);
+    color: white;
+    border: none;
+    font-size: 16px;
+    letter-spacing: .1rem;
+    margin-top: .8rem;
+}
+#selected, #budget{
+    background-color: rgba(13, 13, 13, 1);
+    padding: 2rem;
+    margin-left: -5rem;
+    width: 80%;
+    margin-bottom: 2rem;
+}
+#budget label input{
+    border: 1px solid rgb(180, 180, 180);
+    background-color: transparent;
 }
