@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Open+Sans&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+/* header section start */
+header{
+    min-height: 80vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 1);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./images/lion.png);
+    background-repeat: no-repeat;
+    background-position: left bottom;
+}
+header .banner-img{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+header .banner-img img{
+    width: 80%;
+}
+header .banner-text{
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+}
+header .title{
+    font-family: 'Lobster', cursive;
+    font-weight: 300;
+    font-size: 4rem;
+    color: rgba(255, 94, 25, 1);
+}
+header .description{
+    color: rgb(196, 193, 193);
+    margin-top: 1.5rem;
+}
+/* header section end */
+/* main section start */
+main{
+    background-color: rgb(21, 21, 21);
+}
+.players{
+    width: 70%;
+    padding-top: 5rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
+}
+.player{
+    background-color: rgba(13, 13, 13, 1);
+    color: white;
+}
+.player img{
+    width: 100%;
+}
+.select-btn{
+    padding: 5px 25px;
+    background-color: rgba(1, 81, 150, 1);
+    color: white;
+    border: none;
+}
