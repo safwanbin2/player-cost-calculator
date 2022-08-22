@@ -21,11 +21,12 @@ header{
     background-image: url(./images/lion.png);
     background-repeat: no-repeat;
     background-position: left bottom;
+    overflow: hidden;
 }
 header .banner-img{
     position: absolute;
     left: 0;
-    bottom: 0;
+    bottom: -10px;
 }
 header .banner-img img{
     width: 80%;
@@ -69,6 +70,8 @@ main{
     color: white;
     text-align: center;
     padding-bottom: 1rem;
+    width: 280px;
+    height: 350px;
 }
 .player img{
     width: 100%;
@@ -118,6 +121,10 @@ main{
     margin-left: -5rem;
     width: 80%;
     margin-bottom: 2rem;
+}
+#selected{
+    height: 180px;
+    overflow: hidden;
 }
 #budget label{
     display: flex;
