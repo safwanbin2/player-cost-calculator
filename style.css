@@ -197,3 +197,20 @@ footer{
         width: 100%;
     }
 }
+@media screen and (max-width: 480px){
+    main .players{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    main .menu{
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 95%;
+        margin: 0 auto;
+    }
+    #selected, #budget{
+        width: 80%;
+        margin: 1rem auto;
+        
+    }
+}
