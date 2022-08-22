@@ -70,18 +70,14 @@ main{
     color: white;
     text-align: center;
     padding-bottom: 1rem;
-    width: 280px;
-    height: 350px;
+    /* width: 280px;
+    height: 350px; */
 }
 .player img{
     width: 100%;
 }
 .player-name{
     margin: 1rem 0;
-}
-.career small{
-    margin: 0 1rem;
-    color: rgb(190, 190, 190);
 }
 .select-btn{
     padding: 8px 35px;
@@ -123,12 +119,12 @@ main{
     margin-bottom: 2rem;
 }
 #selected{
-    height: 180px;
-    overflow: hidden;
+    min-height: 180px;
 }
 #budget label{
     display: flex;
     justify-content: space-between;
+    align-items: center;
     margin: 1rem 0;
 }
 #budget label input{
@@ -152,3 +148,52 @@ footer{
     align-items: center;
 }
 /* footer ends */
+
+
+
+/* media for mobile and tab view */
+@media screen and (max-width: 1023px){
+    main{
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 100%;
+        margin: 0 auto;
+    }
+    main .players{
+        width: 95%;
+        margin: 0 auto;
+    }
+    main .menu{
+        margin: 0 auto;
+        width: 95%;
+        display: flex;
+        justify-content: space-between;
+    }
+    #budget, #selected{
+        margin: 0 1rem;
+    }
+
+}
+@media screen and (max-width: 668px) {
+    header .banner-img{
+        opacity: .5;
+    }
+    main .players{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin: 0 auto;
+    }
+    main .players .player{
+        width: 100%;
+    }
+    main .players .player img{
+        width: 100%;
+    }
+    main .menu{
+        display: flex;
+        width: 100%;
+    }
+    #budget, #selected{
+        width: 100%;
+    }
+}
