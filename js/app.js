@@ -15,7 +15,10 @@ document.getElementById('player').addEventListener('click', function(event){
             // disabling
             btn.setAttribute('disabled', '');
             btn.style.backgroundColor = 'grey';
-            btn.style.cursor = 'none';
+            btn.style.cursor = 'no-drop';
+        }
+        else{
+            alert('can not select more than five');
         }
     }
 });
@@ -31,4 +34,11 @@ document.getElementById('calculate').addEventListener('click', function(){
 });
 
 // clcik event for calculate total button
-document.getElementById('calculate-total')
+document.getElementById('calculate-total').addEventListener('click', function(){
+    const playerExpenses = getDisplayFieldValue('player-expenses');
+    const managerExpenses = getInputFieldValue('manager-expenses');
+    const coachExpenses = getInputFieldValue('coach-expenses');
+    const totalExpenses = playerExpenses + managerExpenses + coachExpenses;
+
+    setDisplayValue('calculate-total-display', totalExpenses);
+});
